@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -45,6 +45,10 @@ namespace Hangman
 
             while (true)
             {
+                //[hc1] Output welcome and instructions
+                Console.WriteLine("Welcome to HangMan!\nType in the blank and press enter to input a character" + 
+                    "\nTry to guess correctly, or you'll lose a point...\nHave fun!\n===============");
+
                 //[h4] For each char in letters, check if they're in guessed or whitelist and output
                 foreach (char x in letters)
                 {
